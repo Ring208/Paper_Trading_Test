@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bmqu1jkklymng"]
+
+[ext_resource type="Texture2D" uid="uid://cm6ewe3gqc1or" path="res://assets/icon/option.png" id="1_rofmb"]
+
+[node name="Node2D" type="Node2D" unique_id=1240110368]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1737678963]
+
+[node name="background" type="ColorRect" parent="CanvasLayer" unique_id=1015887424]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1539.75
+offset_top = -1424.75
+offset_right = 1539.75
+offset_bottom = 1424.75
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="option_button" type="TextureButton" parent="CanvasLayer" unique_id=95694745]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 291.00006
+offset_top = 4.999999
+offset_right = 319.00006
+offset_bottom = 33.0
+scale = Vector2(2.295, 2.295)
+texture_normal = ExtResource("1_rofmb")
+
+[node name="label" type="MarginContainer" parent="CanvasLayer" unique_id=1427594827]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -360.0
+offset_top = 30.0
+offset_right = 360.0
+offset_bottom = 93.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/label" unique_id=885689153]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "테스트"
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=1858547896]
+anchors_preset = -1
+anchor_left = 45.000004
+anchor_right = 45.000004
+offset_left = -32400.002
+offset_top = 128.0
+offset_right = -31680.002
+offset_bottom = 510.0
+color = Color(0.851769, 0.8517689, 0.85176885, 1)
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer" unique_id=833344318]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -360.0
+offset_top = 128.0
+offset_right = 360.0
+offset_bottom = 510.0
