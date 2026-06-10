@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://bmqu1jkklymng"]
 
 [ext_resource type="Texture2D" uid="uid://cm6ewe3gqc1or" path="res://assets/icon/option.png" id="1_rofmb"]
+[ext_resource type="Texture2D" uid="uid://276y27jfjgcs" path="res://assets/icon/logo.png" id="2_ad03d"]
+[ext_resource type="Texture2D" uid="uid://ouu1l1th5cbk" path="res://assets/icon/button/home_disactivate.png" id="3_5ot3v"]
+[ext_resource type="Texture2D" uid="uid://c0xsp6xwr3jjy" path="res://assets/icon/button/home_activate.png" id="4_j3i68"]
+[ext_resource type="Texture2D" uid="uid://jh3k6ity07kn" path="res://assets/icon/button/stock_disactivate.png" id="5_mojnb"]
+[ext_resource type="Texture2D" uid="uid://bgyf67blj55j" path="res://assets/icon/button/stock_activate.png" id="6_1ifjt"]
+[ext_resource type="Texture2D" uid="uid://dok8cp5vr0uq6" path="res://assets/icon/button/favorite_disactivate.png" id="7_bj6g0"]
+[ext_resource type="Texture2D" uid="uid://cpev63jglw4bv" path="res://assets/icon/button/favorite_activate.png" id="8_e38di"]
 
 [node name="Node2D" type="Node2D" unique_id=1240110368]
 
@@ -12,14 +19,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -1539.75
-offset_top = -1424.75
-offset_right = 1539.75
-offset_bottom = 1424.75
+offset_left = -1483.0
+offset_top = -1412.0
+offset_right = 1596.5
+offset_bottom = 1437.5
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="option_button" type="TextureButton" parent="CanvasLayer" unique_id=95694745]
+visible = false
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
@@ -30,20 +38,16 @@ offset_bottom = 33.0
 scale = Vector2(2.295, 2.295)
 texture_normal = ExtResource("1_rofmb")
 
-[node name="label" type="MarginContainer" parent="CanvasLayer" unique_id=1427594827]
+[node name="logo" type="TextureRect" parent="CanvasLayer" unique_id=487547186]
 anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -360.0
-offset_top = 30.0
-offset_right = 360.0
-offset_bottom = 93.0
-
-[node name="Label2" type="Label" parent="CanvasLayer/label" unique_id=885689153]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-text = "테스트"
+anchor_top = 0.045
+anchor_bottom = 0.045
+offset_left = 5.0
+offset_top = -41.600002
+offset_right = 165.80734
+offset_bottom = 42.399998
+texture = ExtResource("2_ad03d")
+expand_mode = 1
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=1858547896]
 anchors_preset = 5
@@ -71,3 +75,46 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "관심 종목을 추가해주세요!"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1482304958]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -144.0
+offset_right = 360.0
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/ColorRect" unique_id=1173392698]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 144.0
+toggle_mode = true
+texture_normal = ExtResource("3_5ot3v")
+texture_pressed = ExtResource("4_j3i68")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="TextureButton2" type="TextureButton" parent="CanvasLayer/ColorRect" unique_id=316757431]
+layout_mode = 0
+offset_left = 240.0
+offset_top = -1.0
+offset_right = 480.0
+offset_bottom = 143.0
+toggle_mode = true
+texture_normal = ExtResource("5_mojnb")
+texture_pressed = ExtResource("6_1ifjt")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="TextureButton3" type="TextureButton" parent="CanvasLayer/ColorRect" unique_id=1006213189]
+layout_mode = 0
+offset_left = 480.0
+offset_right = 720.0
+offset_bottom = 144.0
+toggle_mode = true
+texture_normal = ExtResource("7_bj6g0")
+texture_pressed = ExtResource("8_e38di")
+ignore_texture_size = true
+stretch_mode = 3
